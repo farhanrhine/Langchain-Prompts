@@ -20,4 +20,14 @@ ollama
 streamlit
 langchain-ollama
 
+# Audio processing
+# streamlit-audio-recorder  # Commented out as it's causing installation issues
+SpeechRecognition
+gTTS
+pydub
 
+# RAG Pipeline
+chromadb
+sentence-transformers
+PyPDF2
+pandas
