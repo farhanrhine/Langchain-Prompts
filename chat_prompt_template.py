@@ -1,3 +1,4 @@
+# dynamic chat template for dynamic messages
 from langchain_core.prompts import ChatPromptTemplate
 
 chat_template = ChatPromptTemplate([

@@ -1,13 +1,16 @@
-from langchain_openai import ChatOpenAI
+# static prompt interact with messages.py for storeing previous messages
+
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from dotenv import load_dotenv
+from langchain_ollama import ChatOllama
 
 load_dotenv()
 
-model = ChatOpenAI()
+model = ChatOllama(model='tinydolphin')
 
 chat_history = [
-    SystemMessage(content='You are a helpful AI assistant')
+    SystemMessage(content="You are a helpful AI assistant. Answer questions clearly and concisely, in plain English.")
+
 ]
 
 while True:
